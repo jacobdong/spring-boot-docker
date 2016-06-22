@@ -1,0 +1,9 @@
+FROM registry.aliyuncs.com/com.lida/java8:latest
+
+MAINTAINER JacobdDong@qq.com
+
+ADD /@pom.artifactId@-@pom.version@.jar /opt/app
+
+EXPOSE  8080
+
+CMD ["java","-jar","/opt/app/@pom.artifactId@-@pom.version@.jar"]

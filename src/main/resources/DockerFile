@@ -1,9 +1,0 @@
-FROM registry.aliyuncs.com/com.lida/java8:latest
-
-MAINTAINER JacobdDong
-
-ADD ../@pom.artifactId@-@pom.version@.jar //app
-
-EXPOSE  8080
-
-CMD ["java","-jar","/app/@pom.artifactId@-@pom.version@.jar"]

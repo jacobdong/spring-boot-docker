@@ -67,10 +67,7 @@
                             <resources>
                                 <!--复制DockerFile-->
                                 <resource>
-                                    <directory>src/main/resources</directory>
-                                    <includes>
-                                        <include>DockerFile</include>
-                                    </includes>
+                                    <directory>${basedir}/.docker</directory>
                                     <filtering>true</filtering>
                                 </resource>
                             </resources>
