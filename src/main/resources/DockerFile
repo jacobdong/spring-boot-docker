@@ -4,6 +4,6 @@ MAINTAINER JacobdDong
 
 ADD /@pom.artifactId@-@pom.version@.jar //app
 
-EXPOSE  10001
+EXPOSE  8080
 
 CMD ["java","-jar","/app/@pom.artifactId@-@pom.version@.jar"]

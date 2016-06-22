@@ -1,0 +1,1 @@
+docker build -t @pom.artifactId@-@pom.version@ --file ./DockerFile .
