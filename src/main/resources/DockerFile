@@ -1,23 +1,9 @@
-FROM ubuntu:latest
+FROM registry.aliyuncs.com/com.lida/java8:latest
 
-MAINTAINER wiselyman
+MAINTAINER JacobdDong
 
-RUN apt-get update
-
-RUN apt-get install default-jre -y
-
-RUN apt-get install default-jdk -y
-
-RUN apt-get install maven -y
-
-ADD pom.xml /app/
-
-ADD src/ /app/src/
-
-WORKDIR /app/
-
-RUN mvn package
+ADD /@pom.artifactId@-@pom.version@.jar //app
 
 EXPOSE  10001
 
-CMD ["java","-jar","target/@pom.artifactId@-@pom.version@.jar"]
+CMD ["java","-jar","/app/@pom.artifactId@-@pom.version@.jar"]
