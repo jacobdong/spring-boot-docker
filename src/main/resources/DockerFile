@@ -2,7 +2,7 @@ FROM registry.aliyuncs.com/com.lida/java8:latest
 
 MAINTAINER JacobdDong
 
-ADD /@pom.artifactId@-@pom.version@.jar //app
+ADD ../@pom.artifactId@-@pom.version@.jar //app
 
 EXPOSE  8080
 
