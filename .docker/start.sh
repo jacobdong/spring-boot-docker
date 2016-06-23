@@ -1,0 +1,1 @@
+docker run -d -n@pom.artifactId@ -p 10081:8080
